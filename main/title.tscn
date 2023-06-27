@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://dw2hnhxy7ma34"]
+
+[node name="title" type="Node2D"]
+
+[node name="o" type="Line2D" parent="."]
+position = Vector2(-80, 0)
+points = PackedVector2Array(1, -56, 14, -30, -2, 12, -27, 3, -39, -40, -23, -64, 9, -38)
+
+[node name="t" type="Line2D" parent="."]
+position = Vector2(-47, 0)
+points = PackedVector2Array(13, -52, 9, 2, 12, -39, -14, -43, 31, -36)
+
+[node name="g" type="Line2D" parent="."]
+position = Vector2(-21, 0)
+points = PackedVector2Array(34, -19, 20, -28, 1, -3, 25, 11, 36, -11, 36, -41, 37, 31, 17, 37, 13, 24, -4, 26)
+
+[node name="o2" type="Line2D" parent="."]
+position = Vector2(37, 0)
+points = PackedVector2Array(18, -39, 39, -14, 33, 9, 0, 2, 1, -32, 23, -35)
+
+[node name="d" type="Line2D" parent="."]
+position = Vector2(88, 0)
+points = PackedVector2Array(36, -19, 8, -30, -1, -4, 13, 12, 35, 2, 38, 17, 33, -72)

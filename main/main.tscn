@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://c1dsgfi2168rb"]
+
+[ext_resource type="PackedScene" uid="uid://dtfcn7awdifqa" path="res://main/otgod.tscn" id="1_2pk16"]
+[ext_resource type="PackedScene" uid="uid://dw2hnhxy7ma34" path="res://main/title.tscn" id="2_874dp"]
+
+[node name="main" type="Node2D"]
+
+[node name="Otgod" parent="." instance=ExtResource("1_2pk16")]
+position = Vector2(194, 76)
+scale = Vector2(0.2, 0.2)
+
+[node name="title" parent="." instance=ExtResource("2_874dp")]
+position = Vector2(160, 140)
+scale = Vector2(0.85, 0.85)

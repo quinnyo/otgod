@@ -1,0 +1,41 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="otgod"
+run/main_scene="res://main/main.tscn"
+config/features=PackedStringArray("4.0", "GL Compatibility")
+boot_splash/image="res://main/splash.png"
+boot_splash/use_filter=false
+config/icon="res://main/icon.png"
+
+[display]
+
+window/size/viewport_width=320
+window/size/viewport_height=200
+window/size/window_width_override=1280
+window/size/window_height_override=800
+window/stretch/mode="viewport"
+window/stretch/aspect="keep_height"
+
+[gui]
+
+fonts/dynamic_fonts/use_oversampling=false
+theme/default_theme_scale=0.5
+theme/default_font_antialiasing=0
+theme/default_font_hinting=0
+theme/default_font_subpixel_positioning=0
+theme/lcd_subpixel_layout=0
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"

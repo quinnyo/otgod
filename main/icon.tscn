@@ -1,0 +1,47 @@
+[gd_scene load_steps=3 format=3 uid="uid://jpbs2kdeckou"]
+
+[ext_resource type="PackedScene" uid="uid://dtfcn7awdifqa" path="res://main/otgod.tscn" id="1_mxfpd"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e0pva"]
+bg_color = Color(0.258824, 0.32549, 0.403922, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.694118, 0.760784, 0.784314, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+corner_detail = 2
+anti_aliasing = false
+
+[node name="icon" type="SubViewportContainer"]
+texture_filter = 1
+offset_right = 128.0
+offset_bottom = 128.0
+
+[node name="SubViewport" type="SubViewport" parent="."]
+transparent_bg = true
+handle_input_locally = false
+snap_2d_transforms_to_pixel = true
+snap_2d_vertices_to_pixel = true
+canvas_item_default_texture_filter = 0
+size = Vector2i(128, 128)
+render_target_update_mode = 4
+
+[node name="Panel" type="PanelContainer" parent="SubViewport"]
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1.0
+offset_top = 1.0
+offset_right = -1.0
+offset_bottom = -1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_e0pva")
+
+[node name="Otgod" parent="SubViewport" instance=ExtResource("1_mxfpd")]
+position = Vector2(64, 74)
+scale = Vector2(0.15, 0.15)

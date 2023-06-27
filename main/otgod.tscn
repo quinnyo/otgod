@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://dtfcn7awdifqa"]
+
+[node name="Otgod" type="Node2D"]
+
+[node name="Otgod" type="Polygon2D" parent="."]
+clip_children = 2
+color = Color(0.529412, 0.756863, 0.980392, 1)
+polygon = PackedVector2Array(-269, 98, -118, 221, 191, 217, 266, 113, 266, -213, 293, -311, 215, -345, 147, -254, 136, -336, 74, -335, 46, -246, -13, -257, -42, -360, -118, -349, -142, -250, -222, -339, -301, -285, -245, -191)
+
+[node name="leye" type="Polygon2D" parent="Otgod"]
+polygon = PackedVector2Array(-125, -127, -94, -143, -56, -114, -43, -70, -82, -50, -156, -69, -175, -112)
+
+[node name="Otgod" type="Polygon2D" parent="Otgod/leye"]
+color = Color(0.109804, 0.0431373, 0.0588235, 1)
+polygon = PackedVector2Array(-83, -113, -70, -104, -79, -81, -95, -84, -110, -105)
+
+[node name="reye" type="Polygon2D" parent="Otgod"]
+polygon = PackedVector2Array(30, -84, 46, -113, 99, -139, 128, -117, 168, -97, 140, -66, 66, -57)
+
+[node name="Otgod" type="Polygon2D" parent="Otgod/reye"]
+color = Color(0.25098, 0.0588235, 0.0823529, 1)
+polygon = PackedVector2Array(81, -115, 104, -95, 80, -94, 61, -90, 61, -106)
+
+[node name="teef" type="Line2D" parent="Otgod"]
+points = PackedVector2Array(-273, 11, -166, 24, -131, 90, -39, 50, 60, 48, 85, 99, 176, 93, 191, 32, 271, 0)
+width = 20.0
+
+[node name="snoot" type="Polygon2D" parent="Otgod"]
+color = Color(0.156863, 0.121569, 0.133333, 1)
+polygon = PackedVector2Array(-3, -83, -20, -73, -43, -2, 16, 5, 9, -58)
